@@ -752,6 +752,9 @@ impl Setup {
             Shell::Zsh => {
                 let _ = out.write_all(ZSH_AUTO_START_SCRIPT);
             },
+            Shell::Nushell => {
+                let _ = out.write_all(NUSHELL_AUTO_START_SCRIPT);
+            },
             _ => {},
         }
     }
