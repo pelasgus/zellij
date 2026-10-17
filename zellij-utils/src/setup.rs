@@ -148,6 +148,12 @@ pub const ZSH_AUTO_START_SCRIPT: &[u8] = include_bytes!(concat!(
     "assets/shell/auto-start.zsh"
 ));
 
+pub const NUSHELL_AUTO_START_SCRIPT: &[u8] = include_bytes!(concat!(
+    env!("CARGO_MANIFEST_DIR"),
+    "/",
+    "assets/shell/auto-start.nu"
+));
+
 pub fn add_layout_ext(s: &str) -> String {
     match s {
         c if s.ends_with(".kdl") => c.to_owned(),
