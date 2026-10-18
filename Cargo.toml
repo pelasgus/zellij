@@ -88,6 +88,7 @@ arboard = { version = "3.6", default-features = false, features = ["wayland-data
 async-trait = { version = "0.1", default-features = false }
 chrono = { version = "0.4.19", default-features = false, features = ["std", "clock"] }
 clap = { version = "4.6", default-features = false, features = ["std", "color", "help", "usage", "error-context", "suggestions", "wrap_help", "derive", "env"] }
+clap_complete_nushell = { version = "4.6.2" }
 crossterm = { version = "0.29", default-features = false, features = ["windows"] }
 daemonize = { package = "daemonix", version = "0.1", default-features = false }
 dialoguer = { version = "0.11", default-features = false, features = ["password", "completion"] }
