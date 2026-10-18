@@ -14,6 +14,7 @@ use crate::{
 };
 use clap::Args;
 use clap_complete::Shell;
+use clap_complete_nushell::Nushell;
 use log::info;
 use serde::{Deserialize, Serialize};
 use std::{convert::TryFrom, fmt::Write as FmtWrite, fs, io::Write, path::PathBuf, process};
